@@ -69,7 +69,7 @@ export default function Footer() {
               © 2025 Club Multimedia. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm mt-1">
-              Developed by <a href="https://www.linkedin.com/in/arvind-kumar-sahu" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition">Arvind Kumar Sahu</a>
+              Developed by <a href="https://www.linkedin.com/in/arvind-kumar-sahu-380498257/" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition">Arvind Kumar Sahu</a>
             </p>
           </div>
           
