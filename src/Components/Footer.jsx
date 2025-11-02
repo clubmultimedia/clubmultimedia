@@ -63,13 +63,15 @@ export default function Footer() {
         </div>
 
         {/* Social Media & Copyright */}
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            © 2025 Club Multimedia. All rights reserved.
-          </p>
-          <p className="text-gray-400 text-sm">
-            Developed by Arvind Kumar Sahu
-          </p>
+       <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-center md:text-left">
+            <p className="text-gray-400 text-sm">
+              © 2025 Club Multimedia. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-sm mt-1">
+              Developed by <a href="https://www.linkedin.com/in/arvind-kumar-sahu" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition">Arvind Kumar Sahu</a>
+            </p>
+          </div>
           
           <div className="flex gap-4">
             
