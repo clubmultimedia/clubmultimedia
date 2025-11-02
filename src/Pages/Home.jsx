@@ -271,7 +271,7 @@ const Home = () => {
     {/* === Mentor 1 === */}
     <div className="flex flex-col items-center bg-[#0b0b2a] p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[90%] md:w-[40%]">
       <img
-        src="src/assets/santoshsir.jpg"
+        src={santosh}
         alt="Dr. Santosh Kumar Kar"
         className="w-100 h-100 object-cover rounded-full border-2 border-blue-500 shadow-md mb-4"
       />
@@ -293,7 +293,7 @@ const Home = () => {
     {/* === Mentor 2 === */}
     <div className="flex flex-col items-center bg-[#0b0b2a] p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[90%] md:w-[40%]">
       <img
-        src="src/assets/ujleshsir.jpg"
+        src={ujlesh}
         alt="Ujlesh sir"
         className="w-100 h-100 object-cover rounded-full border-2 border-purple-500 shadow-md mb-4"
       />
