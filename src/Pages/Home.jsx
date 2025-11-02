@@ -2,7 +2,7 @@ import React from "react";
 import "./global.css";
 import vmp from "../assets/vmp.mp4";
 import cm from "../assets/CM.png";
-import vr from '../assets/Vr.jpg';
+import vr from '../assets/vr.jpg';
 import vide1 from '../assets/vide1.mp4';
 import vrgif from '../assets/vr.gif';
 import blend from '../assets/Blend.jpg';
