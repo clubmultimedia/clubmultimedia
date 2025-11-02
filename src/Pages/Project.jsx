@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import event1 from "../assets/Event1.jpeg";
+import vr from "../assets/vr.jpg"
+import ar from "../assets/Ar.jpg";
 
 const Project = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
@@ -13,7 +16,7 @@ const Project = () => {
         "Provides real-time AR navigation and 3D college view with interactive info points.",
       description:
         "The AR College Guide is an interactive campus navigation system that helps students explore college buildings, labs, and facilities through AR. It integrates real-time navigation, 3D model visualization, and information pop-ups. This enhances onboarding experiences and helps new students get familiar with the campus easily.",
-      img: "src/assets/Event1.jpeg",
+      img: event1,
     },
     {
       title: "VR Herbal Garden",
@@ -24,7 +27,7 @@ const Project = () => {
         "Immersive VR experience with AI herbal guide explaining medicinal plant uses.",
       description:
         "The VR Herbal Garden lets users virtually explore various medicinal plants, with 3D visuals and AI narration. It combines educational immersion and healthcare awareness by simulating real-world botanical environments using VR interaction systems.",
-      img: "src/assets/Vr.jpg",
+      img: vr,
     },
     {
       title: "AI Driving Companion",
@@ -35,7 +38,7 @@ const Project = () => {
         "AR-driven real-time driving assistant with voice-enabled AI companion.",
       description:
         "This AI-powered AR driving assistant offers real-time road guidance, obstacle alerts, and smart interaction via an AI voice companion. It’s designed to enhance driver awareness and reduce cognitive load while providing immersive road overlays in AR.",
-      img: "src/assets/Ar.jpg",
+      img: ar,
     },
   ];
 

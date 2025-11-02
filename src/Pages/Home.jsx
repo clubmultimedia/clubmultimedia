@@ -1,5 +1,24 @@
 import React from "react";
 import "./global.css";
+import vmp from "../assets/vmp.mp4";
+import cm from "../assets/CM.png";
+import vr from '../assets/Vr.jpg';
+import vide1 from '../assets/vide1.mp4';
+import vrgif from '../assets/vr.gif';
+import blend from '../assets/Blend.jpg';
+import amin from '../assets/Anim.jpg';
+import ar from '../assets/Ar.jpg';
+import game from '../assets/game.jpg'; 
+import vfg from '../assets/Vfx.jpg';
+import ps from '../assets/Ps.jpg';
+import ai from '../assets/Ai.jpg';
+import ieessh from '../assets/IEESSH.JPG';
+import aihack from '../assets/AiHack.jpg';
+import ieep from '../assets/IEEP.jpg';
+import gni from '../assets/Gni.jpg';
+import dayzero from '../assets/DayZero.jpg';
+import vision from '../assets/Vision.jpg';
+import infosye from '../assets/infosys.jpg';
 
 const Home = () => {
   return (
@@ -9,7 +28,7 @@ const Home = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="src/assets/vmp.mp4" // Replace with your video path
+          src={vmp}
           autoPlay
           loop
           muted
@@ -24,7 +43,7 @@ const Home = () => {
           {/* Club Logo */}
           <div className="flex justify-center mb-8">
             <img
-              src="src/assets/CM.png"
+              src={cm}
               alt="Club Logo"
               className="w-64 md:w-80 drop-shadow-xl"
             />
@@ -37,7 +56,7 @@ const Home = () => {
           {/* Club VR GIF */}
           <div className="mt-10 flex justify-center">
             <img
-              src="src/assets/vr.gif"
+              src={vrgif}
               alt="VR Animation"
               className="rounded-2xl w-80 md:w-[32rem] lg:w-[40rem] object-cover"
             />
@@ -76,7 +95,7 @@ const Home = () => {
 
             <div className="mt-10 flex justify-center">
               <video
-                src="src/assets/vide1.mp4"
+                src={vide1}
                 autoPlay
                 loop
                 muted
@@ -160,14 +179,14 @@ const Home = () => {
         {/* Domains Grid */}
         <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 md:px-12">
           {[
-            { title: "3-D Modelling", img: "src/assets/Blend.jpg" },
-            { title: "Animation", img: "src/assets/Anim.jpg" },
-            { title: "Game Development", img: "src/assets/game.jpg" },
-            { title: "Augmented Reality", img: "src/assets/Ar.jpg" },
-            { title: "Virtual Reality", img: "src/assets/Vr.jpg" },
-            { title: "VFX", img: "src/assets/Vfx.jpg" },
-            { title: "Video Editing", img: "src/assets/Ps.jpg" },
-            { title: "Artificial Intelligence", img: "src/assets/Ai.jpg" },
+            { title: "3-D Modelling", img: blend },
+            { title: "Animation", img: amin },
+            { title: "Game Development", img: game },
+            { title: "Augmented Reality", img: ar },
+            { title: "Virtual Reality", img: vr },
+            { title: "VFX", img: vfg },
+            { title: "Video Editing", img: ps },
+            { title: "Artificial Intelligence", img: ai },
           ].map((domain, index) => (
             <div
               key={index}
@@ -203,14 +222,14 @@ const Home = () => {
             {[...Array(2)].map((_, setIndex) => (
               <React.Fragment key={setIndex}>
                 {[
-                  { title: "IEE-SSH 2024", img: "src/assets/IEESSH.JPG" },
-                  { title: "GEN-AI Hackathon", img: "src/assets/AiHack.jpg" },
-                  { title: "Infosys Global Hackthon", img: "src/assets/infosys.jpg" },
-                  { title: "IEEE PROTOTYPE SHOWCASE 2024", img: "src/assets/PRO.jpg" },
-                  { title: "PROTOTYPE INNOVATION", img: "src/assets/IEEP.jpg" },
-                  { title: "GNIEEE HACKATHON 2024", img: "src/assets/Gni.jpg" },
-                  { title: "DAY ZERO HACKATHON 2025", img: "src/assets/DayZero.jpg" },
-                  { title: "VISIONARY HACKATHON 2024", img: "src/assets/Vision.jpg" },
+                  { title: "IEE-SSH 2024", img: ieessh },
+                  { title: "GEN-AI Hackathon", img: aihack },
+                  { title: "Infosys Global Hackthon", img: infosye },
+                  { title: "IEEE PROTOTYPE SHOWCASE 2024", img: ieep },
+                  { title: "PROTOTYPE INNOVATION", img: ieep },
+                  { title: "GNIEEE HACKATHON 2024", img: gni },
+                  { title: "DAY ZERO HACKATHON 2025", img: dayzero },
+                  { title: "VISIONARY HACKATHON 2024", img: vision },
                 ].map((item, index) => (
                   <div
                     key={`${setIndex}-${index}`}

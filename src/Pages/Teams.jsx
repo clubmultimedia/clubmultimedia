@@ -1,4 +1,13 @@
 import React from "react";
+import all from "../assets/All.jpg";
+import arvind from "../assets/Arvind.jpg";
+import anim from "../assets/Anim.jpg";
+import game from "../assets/game.jpg";
+import ar from "../assets/Ar.jpg";
+import ps from "../assets/Ps.jpg";
+import vr from "../assets/vr.jpg";
+import vfx from "../assets/Vfx.jpg";
+import ai from "../assets/Ai.jpg";
 
 const Teams = () => {
   return (
@@ -18,11 +27,6 @@ const Teams = () => {
         >
           MULTIMEDIAN
         </h1>
-
-      
-
-
-
         {/* Centered Section */}
         <div className="w-full flex flex-col items-center justify-center text-center space-y-6 mt-10">
           <h2 className="text-3xl md:text-4xl font-semibold leading-snug text-white">
@@ -31,7 +35,7 @@ const Teams = () => {
 
           <div className="mt-8 flex justify-center">
             <img
-              src="src/assets/All.jpg"
+              src={all}
               alt="We Paint Your Thoughts"
               className="rounded-2xl shadow-2xl w-[90%] md:w-[45rem] lg:w-[50rem] object-cover"
             />
@@ -48,50 +52,50 @@ const Teams = () => {
               {
                 title: "Arvind Kumar Sahu",
                 batch: "2022-2026",
-                img: "src/assets/Arvind.jpg",
+                img: arvind,
                 linkedin:
                   "https://www.linkedin.com/in/arvind-kumar-sahu-380498257/",
               },
               {
                 title: "Animation",
                 batch: "2022-2026",
-                img: "src/assets/Anim.jpg",
+                img: anim,
                 linkedin: "https://www.linkedin.com/in/animationteam",
               },
               {
                 title: "Game Development",
                 batch: "2022-2026",
-                img: "src/assets/game.jpg",
+                img: game,
                 linkedin: "https://www.linkedin.com/in/gamedevteam",
               },
               {
                 title: "Augmented Reality",
                 batch: "2022-2026",
-                img: "src/assets/Ar.jpg",
+                img: ar,
                 linkedin: "https://www.linkedin.com/in/arteam",
               },
               {
                 title: "Virtual Reality",
                 batch: "2022-2026",
-                img: "src/assets/Vr.jpg",
+                img: vr,
                 linkedin: "https://www.linkedin.com/in/vrteam",
               },
               {
                 title: "VFX",
                 batch: "2022-2026",
-                img: "src/assets/Vfx.jpg",
+                img: vfx,
                 linkedin: "https://www.linkedin.com/in/vfxteam",
               },
               {
                 title: "Video Editing",
                 batch: "2022-2026",
-                img: "src/assets/Ps.jpg",
+                img: ps,
                 linkedin: "https://www.linkedin.com/in/videoeditteam",
               },
               {
                 title: "Artificial Intelligence",
                 batch: "2022-2026",
-                img: "src/assets/Ai.jpg",
+                img: ai,
                 linkedin: "https://www.linkedin.com/in/aiteam",
               },
             ].map((member, index) => (

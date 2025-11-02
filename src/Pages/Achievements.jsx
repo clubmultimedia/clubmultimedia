@@ -11,6 +11,9 @@ import {
   Users,
   Sparkles,
 } from 'lucide-react';
+import infosysImage from '../assets/infosys.jpg';
+import aiHackImage from '../assets/AiHack.jpg';
+import ficciImage from '../assets/Ficci.jpg';
 
 export default function Achievements() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +36,7 @@ export default function Achievements() {
       date: 'August 2025',
       domain: 'Performance Excellence',
       contributors: ['Arvind Kumar Sahu', 'Team METAACHIEVERS'],
-      image: 'src/assets/infosys.jpg',
+      image: infosysImage,
       description:
         'Recognized as the top performer for exceptional dedication and outstanding results achieved throughout the quarter.',
       color: 'from-yellow-400 to-orange-500',
@@ -44,7 +47,7 @@ export default function Achievements() {
       date: '03 July 2025',
       domain: 'AI/Ar/Vr',
       contributors: ['Bikash Bisoyi', 'Suryakanta Mahanti','Shreya Kumari'],
-      image: 'src/assets/AiHack.jpg',
+      image: aiHackImage,
       description:'Best Idea Pitching Award\n Best Recognition for Outstanding Impact and Creativity',
     },
     {
@@ -53,7 +56,7 @@ export default function Achievements() {
       date: 'September 2025',
       domain: 'XR DEVELOPER',
       contributors: ['Arvind Kumar Sahu', 'Bikash Bisoyi', 'Suryakanta Mahanti', 'Sneha Jha', 'The Whole Multimedia Club'],
-      image: 'src/assetS/Ficci.jpg',
+      image: ficciImage,
       description:
         'Successfully completed advanced certification program with distinction, demonstrating expertise in the field.',
       color: 'from-blue-400 to-indigo-500',
@@ -64,7 +67,7 @@ export default function Achievements() {
       date: '03 July 2025',
       domain: 'AI/Ar/Vr',
       contributors: ['Bikash Bisoyi', 'Suryakanta Mahanti','Shreya Kumari'],
-      image: 'src/assets/AiHack.jpg',
+      image: aiHackImage,
       description:
         'Received recognition for developing innovative solutions that improved efficiency by 40% and saved valuable resources.',
       color: 'from-green-400 to-teal-500',
@@ -75,10 +78,21 @@ export default function Achievements() {
       date: '15th November 2025',
       domain: 'Unity Game development, Ar , Vr',
       contributors: ['Arvind Kumar Sahu'],
-      image: 'src/assets/infosys.jpg',
+      image: infosysImage,
       description:
         'Recognized as the top performer for exceptional dedication and outstanding results achieved throughout the quarter.',
       color: 'from-yellow-400 to-orange-500',
+    },
+    {
+      icon: Lightbulb,
+      title: 'Best Idea Pitching Award\n Best Recognition for Outstanding Impact and Creativity',
+      date: '03 July 2025',
+      domain: 'AI/Ar/Vr',
+      contributors: ['Bikash Bisoyi', 'Suryakanta Mahanti','Shreya Kumari'],
+      image: aiHackImage,
+      description:
+        'Received recognition for developing innovative solutions that improved efficiency by 40% and saved valuable resources.',
+      color: 'from-green-400 to-teal-500',
     },
   ];
 

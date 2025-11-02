@@ -1,4 +1,7 @@
 import React from "react";
+import event1 from '../assets/Event1.jpeg'
+import game from '../assets/game.jpg'
+import ar from '../assets/Ar.jpg'
 
 const Event = () => {
   const events = [
@@ -6,19 +9,19 @@ const Event = () => {
       title: "Tech Innovation Expo",
       date: "15th August 2025",
       description: "A showcase of cutting-edge AR/VR technologies and immersive experiences.",
-      img: "src/assets/Event1.jpeg",
+      img: event1,
     },
     {
       title: "Game Dev Hackathon",
       date: "22nd September 2025",
       description: "Developed thrilling 2D and VR games in a 24-hour challenge with top creators.",
-      img: "src/assets/game.jpg",
+      img: game,
     },
     {
       title: "AR Reality Summit",
       date: "12th October 2025",
       description: "Exploring real-world AR applications in education and real estate.",
-      img: "src/assets/Ar.jpg",
+      img: ar,
     },
   ];
 

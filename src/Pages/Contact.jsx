@@ -1,160 +1,154 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
-const Contact = () => {
-  const [flippedIndex, setFlippedIndex] = useState(null);
- 
-   const projects = [
-     {
-       title: "AR College Guide",
-       builtBy: "Arvind Kumar Sahu & Team",
-       domain: "Augmented Reality, Education",
-       stack: "Unity, AR Foundation, C#, Firebase",
-       uniqueness:
-         "Provides real-time AR navigation and 3D college view with interactive info points.",
-       description:
-         "The AR College Guide is an interactive campus navigation system that helps students explore college buildings, labs, and facilities through AR. It integrates real-time navigation, 3D model visualization, and information pop-ups. This enhances onboarding experiences and helps new students get familiar with the campus easily.",
-       img: "src/assets/Event1.jpeg",
-     },
-     {
-       title: "VR Herbal Garden",
-       builtBy: "Arvind Kumar Sahu & Team",
-       domain: "Virtual Reality, Healthcare",
-       stack: "Unity, Oculus SDK, Blender, C#",
-       uniqueness:
-         "Immersive VR experience with AI herbal guide explaining medicinal plant uses.",
-       description:
-         "The VR Herbal Garden lets users virtually explore various medicinal plants, with 3D visuals and AI narration. It combines educational immersion and healthcare awareness by simulating real-world botanical environments using VR interaction systems.",
-       img: "src/assets/Vr.jpg",
-     },
-     {
-       title: "AI Driving Companion",
-       builtBy: "Arvind Kumar Sahu & Team",
-       domain: "AI, AR in Automotive",
-       stack: "Unity, OpenAI API, ARCore, Python",
-       uniqueness:
-         "AR-driven real-time driving assistant with voice-enabled AI companion.",
-       description:
-         "This AI-powered AR driving assistant offers real-time road guidance, obstacle alerts, and smart interaction via an AI voice companion. It’s designed to enhance driver awareness and reduce cognitive load while providing immersive road overlays in AR.",
-       img: "src/assets/Ar.jpg",
-     },
-   ];
- 
-   return (
-     <>
-       {/* === Background Effects === */}
-       <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
-         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl"></div>
-         <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl"></div>
-       </div>
- 
-       {/* === MAIN SECTION === */}
-       <div className="relative min-h-screen bg-black text-white px-8 py-24 overflow-hidden">
-         {/* Background Text */}
-         <h1
-           className="absolute top-10 left-1/2 -translate-x-1/2 text-[11vw] font-extrabold text-transparent select-none tracking-widest"
-           style={{ WebkitTextStroke: "1px rgba(255,255,255,0.27)" }}
-         >
-           PROJECTS
-         </h1>
- 
-         {/* Section Title */}
-         <div className="text-center mb-16 mt-12">
-           <h2 className="text-3xl md:text-4xl font-semibold text-white">
-             Innovative Projects 🚀
-           </h2>
-           <div className="mt-6 flex justify-center">
-             <div className="w-20 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full"></div>
-           </div>
-         </div>
- 
-         {/* === Project Cards === */}
-         <div className="container mx-auto flex flex-col space-y-24">
-           {projects.map((project, index) => (
-             <div
-               key={index}
-               onClick={() =>
-                 setFlippedIndex(flippedIndex === index ? null : index)
-               }
-               className={`relative flex flex-col md:flex-row items-center justify-between gap-8 rounded-3xl border border-gray-800 bg-gradient-to-br from-gray-900/70 to-black/90 shadow-2xl backdrop-blur-md p-6 transition-transform duration-500 hover:scale-[1.02] hover:shadow-blue-500/20 cursor-pointer ${
-                 index % 2 === 1 ? "md:flex-row-reverse" : ""
-               }`}
-             >
-               {/* === FLIP CONTAINER === */}
-               <div className="relative w-full md:w-full h-[26rem] perspective">
-                 <div
-                   className={`absolute inset-0 transition-transform duration-700 transform-style-preserve-3d ${
-                     flippedIndex === index ? "rotate-y-180" : ""
-                   }`}
-                 >
-                   {/* === FRONT SIDE === */}
-                   <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-between backface-hidden">
-                     {/* Image */}
-                     <div className="w-full md:w-3/5 flex justify-center">
-                       <img
-                         src={project.img}
-                         alt={project.title}
-                         className="w-full md:w-[90%] h-[24rem] object-cover rounded-2xl"
-                       />
-                     </div>
- 
-                     {/* Text Info */}
-                     <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left space-y-3 p-4">
-                       <h2 className="text-2xl font-semibold">
-                         {project.title}
-                       </h2>
-                       <p className="text-blue-400 text-sm">
-                         Built By: {project.builtBy}
-                       </p>
-                       <p className="text-gray-300 text-sm">
-                         Domain: {project.domain}
-                       </p>
-                       <p className="text-gray-300 text-sm">
-                         Stack: {project.stack}
-                       </p>
-                       <p className="text-gray-400 text-sm">
-                         {project.uniqueness}
-                       </p>
-                       <p className="text-gray-500 text-xs mt-2 italic">
-                         (Click to see more)
-                       </p>
-                     </div>
-                   </div>
- 
-                   {/* === BACK SIDE === */}
-                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-blue-950/60 to-black/90 rounded-2xl rotate-y-180 backface-hidden border border-gray-700">
-                     <h3 className="text-xl font-semibold mb-3">
-                       {project.title}
-                     </h3>
-                     <p className="text-gray-300 text-sm leading-relaxed max-w-lg">
-                       {project.description}
-                     </p>
-                     <p className="text-gray-500 text-xs mt-4 italic">
-                       (Click again to go back)
-                     </p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           ))}
-         </div>
-       </div>
- 
-       {/* === Extra CSS for Flip Animation === */}
-       <style>{`
-         .perspective {
-           perspective: 1200px;
-         }
-         .transform-style-preserve-3d {
-           transform-style: preserve-3d;
-         }
-         .backface-hidden {
-           backface-visibility: hidden;
-         }
-         .rotate-y-180 {
-           transform: rotateY(180deg);
-         }
-       `}</style>
-     </>
-   );
- };
-export default Contact;
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = () => {
+    if (formData.name && formData.email && formData.message) {
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({ name: '', email: '', message: '' });
+      }, 3000);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-black p-6 md:p-12">
+      <div className="text-center mb-12 mt-16">
+        <h1 className="text-5xl font-bold text-white mb-3">Contact Us</h1>
+        <p className="text-gray-400">Your community, your events, your team</p>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-5 gap-8">
+          {/* Left Side - Contact Form */}
+          <div className="md:col-span-3 bg-slate-900/60 rounded-lg border border-slate-800 p-8">
+            <h1 className="text-3xl font-bold text-white mb-2">
+              Get in Touch
+            </h1>
+            <p className="text-gray-400 mb-8 text-sm">
+              Fill out the form below and we'll get back to you
+            </p>
+
+            {submitted ? (
+              <div className="bg-green-900/30 border border-green-700/50 rounded-lg p-6">
+                <p className="text-green-400 font-medium">✓ Thanks! We received your message.</p>
+              </div>
+            ) : (
+              <div className="space-y-6">
+                <div>
+                  <label className="block text-gray-300 text-sm mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded text-white text-sm focus:outline-none focus:border-slate-600"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-300 text-sm mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded text-white text-sm focus:outline-none focus:border-slate-600"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-300 text-sm mb-2">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows="5"
+                    className="w-full px-4 py-2.5 bg-slate-800 border border-slate-700 rounded text-white text-sm focus:outline-none focus:border-slate-600 resize-none"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+
+                <button
+                  onClick={handleSubmit}
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded text-sm font-medium transition"
+                >
+                  Send Message
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Right Side - Info */}
+          <div className="md:col-span-2 space-y-6">
+            {/* Club Info */}
+            <div className="bg-slate-900/60 border border-slate-800 rounded-lg p-6">
+              <h2 className="text-2xl font-bold text-white mb-1">
+                CLUB <span className="text-blue-400">MULTIMEDIA</span>
+              </h2>
+              <p className="text-gray-400 text-sm mt-3">
+                We're a student-run club focused on multimedia, design, and creative technology.
+              </p>
+            </div>
+
+            {/* Contact Details */}
+            <div className="space-y-3">
+              <div className="bg-slate-900/60 border border-slate-800 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <Mail className="text-blue-400 mt-0.5" size={20} />
+                  <div>
+                    <p className="text-white text-sm font-medium">Email</p>
+                    <p className="text-gray-400 text-sm">club@multimedia.edu</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-slate-900/60 border border-slate-800 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <Phone className="text-blue-400 mt-0.5" size={20} />
+                  <div>
+                    <p className="text-white text-sm font-medium">Phone</p>
+                    <p className="text-gray-400 text-sm">+91 12345 67890</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-slate-900/60 border border-slate-800 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <MapPin className="text-blue-400 mt-0.5" size={20} />
+                  <div>
+                    <p className="text-white text-sm font-medium">Location</p>
+                    <p className="text-gray-400 text-sm">Student Center, 2nd Floor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
