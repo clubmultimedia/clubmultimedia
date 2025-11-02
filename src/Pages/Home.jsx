@@ -19,6 +19,8 @@ import gni from '../assets/Gni.jpg';
 import dayzero from '../assets/DayZero.jpg';
 import vision from '../assets/Vision.jpg';
 import infosye from '../assets/infosys.jpg';
+import santosh from '../assets/santoshsir.jpg';
+import ujlesh from '../assets/ujleshsir.jpg';
 
 const Home = () => {
   return (
@@ -245,12 +247,75 @@ const Home = () => {
                       <h2 className="text-lg font-semibold text-white">
                         {item.title}
                       </h2>
+
+                      
                     </div>
                   </div>
+                  
+                  
                 ))}
               </React.Fragment>
             ))}
+            <h4>Mentors </h4>
+            
           </div>
+<div className="min-h-screen bg-[#05051a] text-white flex flex-col items-center py-16">
+  {/* === HEADING === */}
+  <h1 className="text-4xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r bg-white">
+    Mentor
+  </h1>
+
+  {/* === CARDS ROW === */}
+  <div className="flex flex-wrap justify-center items-start gap-45 w-full max-w-6xl px-6">
+
+    {/* === Mentor 1 === */}
+    <div className="flex flex-col items-center bg-[#0b0b2a] p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[90%] md:w-[40%]">
+      <img
+        src="src/assets/santoshsir.jpg"
+        alt="Dr. Santosh Kumar Kar"
+        className="w-100 h-100 object-cover rounded-full border-2 border-blue-500 shadow-md mb-4"
+      />
+      <h2 className="text-2xl font-semibold">Santosh Kumar Kar</h2>
+      <p className="text-gray-400">Club Multimedia Mentor</p>
+      <p className="text-gray-400 mt-2">Computer Science & Engineering Professor</p>
+      <div className="flex space-x-4 mt-4">
+        <a
+          href="https://www.linkedin.com/in/arvind-kumar-sahu-380498257/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-600"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    {/* === Mentor 2 === */}
+    <div className="flex flex-col items-center bg-[#0b0b2a] p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[90%] md:w-[40%]">
+      <img
+        src="src/assets/ujleshsir.jpg"
+        alt="Ujlesh sir"
+        className="w-100 h-100 object-cover rounded-full border-2 border-purple-500 shadow-md mb-4"
+      />
+      <h2 className="text-2xl font-semibold">Ujlesh Kumar</h2>
+      <p className="text-gray-400">Batch: 2023 - 2027</p>
+      <p className="text-gray-400 mt-2">Specialization: AR/VR Development</p>
+      <div className="flex space-x-4 mt-4">
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-600"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
         </div>
       </div>
     </>
