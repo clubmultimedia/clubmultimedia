@@ -8,6 +8,8 @@ import ps from "../assets/Ps.jpg";
 import vr from "../assets/vr.jpg";
 import vfx from "../assets/Vfx.jpg";
 import ai from "../assets/Ai.jpg";
+import nilkanth from "../assets/Nilkanth.jpg";
+
 
 const Teams = () => {
   return (
@@ -57,10 +59,10 @@ const Teams = () => {
                   "https://www.linkedin.com/in/arvind-kumar-sahu-380498257/",
               },
               {
-                title: "Animation",
+                title: "Nilakath Sahu",
                 batch: "2022-2026",
-                img: anim,
-                linkedin: "https://www.linkedin.com/in/animationteam",
+                img: nilkanth,
+                linkedin: "https://www.linkedin.com/in/nilakantha-sahu-a676a9296/",
               },
               {
                 title: "Game Development",
