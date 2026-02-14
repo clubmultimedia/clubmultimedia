@@ -8,7 +8,7 @@ import ps from "../assets/Ps.jpg";
 import vr from "../assets/vr.jpg";
 import vfx from "../assets/Vfx.jpg";
 import ai from "../assets/Ai.jpg";
-import nilkanth from "../assets/Nilkanth.jpg";
+import nilkanth from "../assets/Nilkanth.jpeg";
 
 
 const Teams = () => {
