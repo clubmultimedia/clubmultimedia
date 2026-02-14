@@ -9,6 +9,17 @@ import vr from "../assets/vr.jpg";
 import vfx from "../assets/Vfx.jpg";
 import ai from "../assets/Ai.jpg";
 import nilkanth from "../assets/Nilkanth.jpeg";
+import Barvind from "../assets/2022/Barvind.jpeg";
+import Faizan from "../assets/2022/Faizan.jpeg";
+import Kunaal from "../assets/2022/kunaal.jpeg";
+import Neekitha from "../assets/2022/Neekitha.jpeg";
+import Priyanka from "../assets/2022/Priyanka.png";
+import Sradha from "../assets/2022/Sradha.jpeg";
+import Soumitra from "../assets/2022/Soumitra.jpeg";
+import Smritika from "../assets/2022/Smritika.jpeg";
+import Sushree from "../assets/2022/Sushree.jpeg";
+import Soumyashree from "../assets/2022/Soumyashree.jpeg";
+import nagarjun from "../assets/2022/nagarjun.jpeg";
 
 
 const Teams = () => {
@@ -65,40 +76,94 @@ const Teams = () => {
                 linkedin: "https://www.linkedin.com/in/nilakantha-sahu-a676a9296/",
               },
               {
-                title: "Game Development",
+                title: "B Arvind",
                 batch: "2022-2026",
-                img: game,
-                linkedin: "https://www.linkedin.com/in/gamedevteam",
+                img: Barvind,
+                linkedin: "https://www.linkedin.com/in/b-arvind/",
               },
               {
-                title: "Augmented Reality",
+                title: "M Kunaal",
                 batch: "2022-2026",
-                img: ar,
-                linkedin: "https://www.linkedin.com/in/arteam",
+                img: Kunaal,
+                linkedin: "https://www.linkedin.com/in/kunaal-manda-06276b292/",
               },
               {
-                title: "Virtual Reality",
+                title: "B Nagarjun",
                 batch: "2022-2026",
-                img: vr,
-                linkedin: "https://www.linkedin.com/in/vrteam",
+                img: nagarjun,
+                linkedin: "https://www.linkedin.com/in/bnagarjun22/",
               },
               {
-                title: "VFX",
+                title: "Anit Kumar Rout",
                 batch: "2022-2026",
-                img: vfx,
-                linkedin: "https://www.linkedin.com/in/vfxteam",
+                img: anim,
+                linkedin: "https://www.linkedin.com/in/anit-rout-a4b92433b/",
               },
               {
-                title: "Video Editing",
+                title: "Shahil Khan",
                 batch: "2022-2026",
-                img: ps,
-                linkedin: "https://www.linkedin.com/in/videoeditteam",
+                img: sahil,
+                linkedin: "https://www.linkedin.com/in/shahil-parwez-791204282/",
               },
               {
-                title: "Artificial Intelligence",
+                title: "Sanjana Sahu",
+                batch: "2022-2026",
+                img: sanjana,
+                linkedin: "https://www.linkedin.com/in/sanjana-sahu/",
+              },
+              {
+                title: "CH Neekitha",
+                batch: "2022-2026",
+                img: Neekitha,
+                linkedin: "https://www.linkedin.com/in/chandra-mohanty-neekitha-komali-1314b0348/",
+              },
+              {
+                title: "Faizan Khan",
+                batch: "2022-2026",
+                img: Faizan,
+                linkedin: "https://www.linkedin.com/in/md-faizan-shariff-384024259/",
+              },
+              {
+                title: "Sradha Maharana ",
+                batch: "2022-2026",
+                img: Sradha,
+                linkedin: "https://www.linkedin.com/in/sradha-maharana/",
+              },
+              {
+                title: "Subendu",
                 batch: "2022-2026",
                 img: ai,
                 linkedin: "https://www.linkedin.com/in/aiteam",
+              },
+              {
+                title: "Soumyashree Rath",
+                batch: "2022-2026",
+                img: Soumyashree,
+                linkedin: "https://www.linkedin.com/in/soumyashree-rath/",
+              },
+              {
+                title: "Susree Dash",
+                batch: "2022-2026",
+                img: Sushree,
+                linkedin: "https://www.linkedin.com/in/sushree-dash-ab34752b9/",
+              },
+              {
+                title: "Priyanka Das",
+                batch: "2022-2026",
+                img: Priyanka,
+                linkedin: "https://www.linkedin.com/in/priyanka-das-217353330/",
+              },
+              {
+                title: "Soumitra Ghosh",
+                batch: "2022-2026",
+                img: Soumitra,
+                linkedin: "https://www.linkedin.com/in/soumitra-ghosh-61878928b/",
+              },
+              {
+                title: "Smritika Sahu",
+                batch: "2022-2026",
+                img: Smritika,
+                linkedin: "https://www.linkedin.com/in/smritika-sahu/",
               },
             ].map((member, index) => (
               <div
