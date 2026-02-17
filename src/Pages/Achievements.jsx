@@ -14,6 +14,7 @@ import {
 import infosysImage from '../assets/infosys.jpg';
 import aiHackImage from '../assets/AiHack.jpg';
 import ficciImage from '../assets/Ficci.jpg';
+import sih from "../assets/Achievements/sih.jpeg";
 
 export default function Achievements() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,6 +31,18 @@ export default function Achievements() {
   ];
 
   const achievements = [
+    
+    {
+      icon: Award,
+      title: 'SIH 2025 Software Category',
+      date: 'Descember 2025',
+      domain: 'AR VR in Tourism ',
+      contributors: ['Suryakant Maharana ', 'Bikash Bisoyi','Shreya Kumari', 'Team Augmentors Creators'],
+      image: sih,
+      description:
+        'Recognized as the top performer for exceptional dedication and outstanding results achieved throughout the quarter.',
+      color: 'from-yellow-400 to-orange-500',
+    },
     {
       icon: Award,
       title: 'Infosys Global Hackathon',

@@ -14,13 +14,15 @@ import Faizan from "../assets/2022/Faizan.jpeg";
 import Kunaal from "../assets/2022/kunaal.jpeg";
 import Neekitha from "../assets/2022/Neekitha.jpeg";
 import Priyanka from "../assets/2022/Priyanka.png";
-import Sradha from "../assets/2022/Sradha.jpeg";
-import Soumitra from "../assets/2022/Soumitra.jpeg";
+import Sahil from "../assets/2022/sahil.jpeg";
+import Sanjana from "../assets/2022/Sanjana.jpeg";
 import Smritika from "../assets/2022/Smritika.jpeg";
-import Sushree from "../assets/2022/Sushree.jpeg";
+import Soumitra from "../assets/2022/soumitra.jpeg";
 import Soumyashree from "../assets/2022/Soumyashree.jpeg";
+import Sushree from "../assets/2022/Sushre.jpeg";
 import nagarjun from "../assets/2022/nagarjun.jpeg";
-
+import sradha from "../assets/2022/sradha.jpeg";
+import subhendu from "../assets/2022/subendu.jpeg";
 
 const Teams = () => {
   return (
@@ -102,13 +104,13 @@ const Teams = () => {
               {
                 title: "Shahil Khan",
                 batch: "2022-2026",
-                img: sahil,
+                img: Sahil,
                 linkedin: "https://www.linkedin.com/in/shahil-parwez-791204282/",
               },
               {
                 title: "Sanjana Sahu",
                 batch: "2022-2026",
-                img: sanjana,
+                img: Sanjana,
                 linkedin: "https://www.linkedin.com/in/sanjana-sahu/",
               },
               {
@@ -126,13 +128,13 @@ const Teams = () => {
               {
                 title: "Sradha Maharana ",
                 batch: "2022-2026",
-                img: Sradha,
+                img: sradha,
                 linkedin: "https://www.linkedin.com/in/sradha-maharana/",
               },
               {
                 title: "Subendu",
                 batch: "2022-2026",
-                img: ai,
+                img: subhendu,
                 linkedin: "https://www.linkedin.com/in/aiteam",
               },
               {

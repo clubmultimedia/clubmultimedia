@@ -21,7 +21,7 @@ import vision from '../assets/Vision.jpg';
 import infosye from '../assets/infosys.jpg';
 import santosh from '../assets/santoshsir.jpg';
 import ujlesh from '../assets/ujleshsir.jpg';
-
+import uj from '../assets/ujleshsir.jpg';
 const Home = () => {
   return (
     <>
@@ -232,6 +232,8 @@ const Home = () => {
                   { title: "GNIEEE HACKATHON 2024", img: gni },
                   { title: "DAY ZERO HACKATHON 2025", img: dayzero },
                   { title: "VISIONARY HACKATHON 2024", img: vision },
+                  { title: "SIH 2025", img: vision },
+
                 ].map((item, index) => (
                   <div
                     key={`${setIndex}-${index}`}
@@ -293,7 +295,7 @@ const Home = () => {
     {/* === Mentor 2 === */}
     <div className="flex flex-col items-center bg-[#0b0b2a] p-6 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[90%] md:w-[40%]">
       <img
-        src={ujlesh}
+        src={uj}
         alt="Ujlesh sir"
         className="w-100 h-100 object-cover rounded-full border-2 border-purple-500 shadow-md mb-4"
       />
