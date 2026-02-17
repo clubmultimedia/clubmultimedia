@@ -22,6 +22,7 @@ import infosye from '../assets/infosys.jpg';
 import santosh from '../assets/santoshsir.jpg';
 import ujlesh from '../assets/ujleshsir.jpg';
 import uj from '../assets/ujleshsir.jpg';
+import sihh from '../assets/Achievements/sihh.jpeg';
 const Home = () => {
   return (
     <>
@@ -227,12 +228,13 @@ const Home = () => {
                   { title: "IEE-SSH 2024", img: ieessh },
                   { title: "GEN-AI Hackathon", img: aihack },
                   { title: "Infosys Global Hackthon", img: infosye },
+                  { title: "SIH 2025", img: sihh },
                   { title: "IEEE PROTOTYPE SHOWCASE 2024", img: ieep },
                   { title: "PROTOTYPE INNOVATION", img: ieep },
                   { title: "GNIEEE HACKATHON 2024", img: gni },
                   { title: "DAY ZERO HACKATHON 2025", img: dayzero },
                   { title: "VISIONARY HACKATHON 2024", img: vision },
-                  { title: "SIH 2025", img: vision },
+                  { title: "SIH 2025", img: sihh },
 
                 ].map((item, index) => (
                   <div

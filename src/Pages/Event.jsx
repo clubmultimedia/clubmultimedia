@@ -2,15 +2,23 @@ import React from "react";
 import event1 from '../assets/Event1.jpeg'
 import game from '../assets/game.jpg'
 import ar from '../assets/Ar.jpg'
+import found from '../assets/Events/FoundationDay.jpeg'
 
 const Event = () => {
   const events = [
+    {
+      title: "Foundation Day",
+      date: "1st September 2025",
+      description: "Celebrating the foundation of our Multimedia Club.",
+      img: found,
+    },
     {
       title: "Tech Innovation Expo",
       date: "15th August 2025",
       description: "A showcase of cutting-edge AR/VR technologies and immersive experiences.",
       img: event1,
     },
+    
     {
       title: "Game Dev Hackathon",
       date: "22nd September 2025",
