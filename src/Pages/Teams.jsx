@@ -144,7 +144,7 @@ const Teams = () => {
                 linkedin: "https://www.linkedin.com/in/soumyashree-rath/",
               },
               {
-                title: "Susree Dash",
+                title: "Sushree Dash",
                 batch: "2022-2026",
                 img: Sushree,
                 linkedin: "https://www.linkedin.com/in/sushree-dash-ab34752b9/",
